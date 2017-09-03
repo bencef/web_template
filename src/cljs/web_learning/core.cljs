@@ -2,4 +2,4 @@
 
 (enable-console-print!)
 
-(println "Hello web!")
+(println "Well, Hello web!")

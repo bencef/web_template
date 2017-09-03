@@ -16,6 +16,7 @@
   (comp
    (serve :dir "target/")
    (watch)
+   (less)
    (reload)
    (cljs)
    (target)))
