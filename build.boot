@@ -9,3 +9,11 @@
 (require '[adzerk.boot-cljs   :refer [cljs]]
          '[adzerk.boot-reload :refer [reload]]
          '[pandeiro.boot-http :refer [serve]])
+
+(deftask dev []
+  (comp
+   (serve :dir "target/")
+   (watch)
+   (reload)
+   (cljs)
+   (target)))
